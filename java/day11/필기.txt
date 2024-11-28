@@ -1,0 +1,160 @@
+1. 파일 입출력
+ 1-1. java.io.File
+  - File 클래스는 파일 또는 폴더에 대한 정보를 제공하는
+  클래스이다.
+  - File 클래스의 객체는 정보를 조회 하고자 하는 파일이나
+  폴더의 경로에 대한 문자열을 생성자 파라미터로 전달하는
+  형태로 만들 수 있다
+  이 때 파라미터로 전달되는 경로가 실제로 존재하지 
+  않더라고 File객체의 생성이 가능하다.
+  - C:\photo\food.jpg 파일에 대한 객체 생성
+	
+	File file = new File("C:/photo/food.jpg");
+	File file = new FIle("C:/photo","food.jpg");
+
+ 1-2. 운영체제간의 호환성 유지를 위한 "\"의 사용
+  - 경로 문자열을 설정할 때 윈도우기반에서는 역슬래시(\)를
+  사용하지만 이 경우 이스케이프문자를 사용하여 '\\'의
+  형식으로 사용해야 한다.
+  - 가급적 다른 운영체제와의 호환성을 위해 슬래시(/)를
+  사용하는 것이 좋다.
+
+ 1-3. 절대경로
+  - 작업 디렉토리와 관계없이절대적인 위치를 의미하는 경로
+  - 윈도우 예시 : C:/Windos/System32/drivers/etc/hosts
+  - 리눅스 예시 : /etc/httpd/conf/httpd.conf
+
+ 1-4. 상대경로
+  - 작업 디렉토리를 기준으로 상대적인 위치를 의미하는 경로
+  - 윈도우 예시 : ./conf/httpd.conf
+  - 리눅스 예시 : ../drivers/etc/hosts
+
+ 1-5. 문자 인코딩(character encoding)
+  - 문자나 기호들의 집합을 컴퓨터에서 저장하거나 통신에
+  사용할 목적으로 부호화 하는 방법 
+  - UTF-8 : 8비트 이진수로 표현하는 방법
+
+ 1-6. 스트림이란?
+  - 입출력에서 stream이란 디바이스의입출력 방식이
+  character 단위이든 block 단위이든 관계 없이 "1바이트"씩
+  "연속" 적으로 전달되는 형태로, 추상화된 상태를 의미한다.
+  - 입출력 장치는 개별적인 특성이 있으므로 읽고, 쓰는 
+  단위가 각각 다르지만, 스트림은 이러한 일련의 과정을
+  추상화하여 모든 디바이스를 character 단위로만
+  사용하도록 한다.
+  - 즉, 입출력 디바이스의 특성을 무시하고 하나의 단일한
+  입출력 인터페이스로 다룰 수 있도록 하는 것이 stream이다.
+
+ 1-7. 자바의 스트림 관련 클래스
+  - 스트림 관련 클래스들은 각각 InputStream(입력/읽기),
+  OutputStream(출력/저장)과 관련된 인터페이스를
+  상속받기 때문에 모두 동일한 메서드를 가지고 있다.
+  
+
+**결과 값
+[INFO] 파일 저장 성공 >> myfile.txt
+[INFO] 파일 읽기 성공 >> myfile.txt
+안녕하세요. 자바 프로그래밍
+
+- 프로젝트 경로에 myfile.txt 생성 후 
+“안녕하세요. 자바 프로그래밍” 문자열 출력 확인 필수
+
+-------------------------------------------------------------------
+기계어
+JVM
+객체지향 언어
+상속
+캡슐화
+다형성
+*.java -> 컴파일 -> *.class
+java -vesrion
+data type
+OutOfMemoryException
+String
+사칙연산자
+단항연산자
+증감연산자
+비교연산자(==, !=)
+논리연산자(AND, OR)
+형변환(Casting)
+암묵적 형변환
+명시적 형변환
+조건문 - if, if else, switch(break)
+반복문 - for, while, do~while
+무한 루프
+변수의 범위
+break, continue
+배열
+반복문 - 배열이름.length
+2차원 배열 - 행, 열
+행의 길이 : 배열이름.length
+열의 길이 : 배열이름[행].length
+메서드 = 함수
+파라미터 - 변수형 변수이름
+리턴값(void x)
+클래스
+객체
+멤버변수, 지역변수
+null 
+this
+생성자
+은닉성
+public, private, protected, default
+getter, setter
+public, default
+상속
+extends
+Override
+super, super()
+@Override
+오버로드
+this()
+객체 형변환
+parent = child : 암묵적 형변환
+명시적 형변환
+객체 배열
+instanceof 
+추상화
+abstract
+인터페이스
+static
+고정영역
+동적영역
+디자인 패턴
+싱글톤 패턴
+패키지
+ClassPath
+라이브러리
+*.jar
+API
+Wrapper Class
+String -> int, ...
+Math
+random
+String
+정규표현식
+vaildation check
+예외처리
+컴파임 에러
+런타임 에러
+try catch finally
+Exception
+날짜처리
+컬렉션 프레임워크
+hashmap
+arraylist
+스캐너
+파일 입출력
+inputStream
+outputStream
+
+
+
+
+
+
+
+
+
+
+

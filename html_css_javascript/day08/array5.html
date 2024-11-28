@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*
+            함수작성
+            let arr = ["Hello", 10,32.6, true];
+            파라미터 값(배열, 값1)
+            값1이 해당 배열에 있으면 그 인덱스 값을 반환
+        */
+        let arr = ["Hello", 10,32.6, true];
+
+        function find( array, value){
+            let indexNum = array.indexOf(value);
+            if( indexNum == -1 ){   // 없는경우
+                document.write("해당 data " + value 
+                    + " 는 " + array 
+                    + " 배열에 존재하지 않습니다.");
+            } else {                // 존재하는 경우
+                document.write(array + " 배열에서"
+                    + value + " 는"
+                    + indexNum + " 번 인덱스에 있습니다.");
+            }
+        }
+        find(arr, 32.6);
+
+    </script>
+</body>
+</html>

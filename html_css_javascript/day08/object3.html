@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*
+            객체이름.함수이름 = fucntion(파라미터){
+                .. 함수 구현 부분..
+                return 값;
+            };
+
+            - 메서드 안에서 객체 자원 활용하기
+            - 객체 안에 포함된 메서드에서 다른 메서드를
+            호출하거나, 프로퍼티(멤버변수)를 활용하고자
+            하는 경우에는 this 키워드를 사용한다.
+            
+            this.변수이름;
+        */
+        let people = {};
+
+        people.name = "자바학생";
+        people.gender = "남자";
+
+        // 함수를 포함시키기
+        people.sayName = function(){
+            document.write("<h1>" + this.name + "</h1>");
+        };
+
+        people.sayGender = function(){
+            document.write("<h1>" + this.gender + "</h1>");
+        };
+
+        people.saySomething = function(msg){
+            document.write("<h1>" + msg + "</h1>");
+        };
+
+        people.getName = function(){
+            return this.name;
+        };
+
+        people.getGender = function(){
+            return this.gender;
+        };
+
+        people.sayInfo = function(){
+            document.write("<h1>" + this.getName()
+                + "님은 " + this.getGender() + "입니다.</h1>");
+        };
+
+        // 객체안에 메서드 호출
+        people.sayName();
+        people.sayGender();
+        people.saySomething("Hello javascript");
+        people.sayInfo();
+    </script>
+    
+</body>
+</html>

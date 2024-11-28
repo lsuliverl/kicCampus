@@ -1,0 +1,13 @@
+아래 문제를 읽고 답안을 작성하세요
+(명시되지 않은 명칭은 임의로 작성하세요.
+https://drive.google.com/drive/folders/16Hw9nyZQrvTqRkJs_29qdjQEp88AcwAK?usp=sharing  해당 경로에서 다운로드 해주세요.)
+다운로드 파일 : 
+DanceRobot.java, DrawRobot.java, Main01.java, Robot.java, SingRobot.java
+
+[ 실행결과 ] 
+춤을 춥니다.
+노래를 합니다.
+그림을 그립니다
+
+
+

@@ -1,0 +1,112 @@
+
+
+
+1. 데이터베이스 개요
+ 1-1. 자료(data)
+  - 현실 세계에서 관찰이나 측정을 통해 수집한 
+  단순한 사실이나 값
+  
+ 1-2. 정보(Information)
+  - 의사 결정에 도움을 줄 수 있는 유용한 형태
+  - 자료를 가공(처리)해서 얻을 수 있는 결과를 의미
+
+ 1-3. 데이터 베이스(DB)
+  - 어느 한 조직체의 여러 응용 시스템들이 공동으로
+  사용할 수 있도록 통합하여 저장한 운영데이터의
+  집합
+  - 공동의 목적을 지원하기 위한 서로 관련된 
+  자료들의 모임
+  - 주제와 관련된 의미있는 데이터들의 모음
+
+ 1-4. DBMS(DataBase Management System)
+  - 사용자에게 데이터베이스를 생성하고 유지할 수 
+  있게 하는 프로그램 집합
+  - DBMS는 데이터베이스 언어를 가지고 있으며
+  이를 통해 데이터의 삽입/삭제/수정/조회를 할 수
+  있다.
+
+ 1-5. DBMS의 기능
+  - 데이터의 무결성 유지
+	-> DB의 데이터는 실세계를 적용하는
+	규칙을 항상 만족해야 함
+	-> 서로 다른 부분에 있는 두 개의 데이터가
+	서로 모순되지 않아야 함. 데이터의 일관성
+	유지
+
+2. 데이터베이스의 모델의 종류
+ 2-1. 계층데이터 모델
+ 2-2. 망 데이터 모델
+ 2-3. 관계 데이터 모델(Relational Data Model)
+  - 개체 집합에 대한 속성 관계를 표현하기 위하여
+  개체를 테이블로 사용하고 개체 집합들 사이의 
+  관계는 공통 속성으로 연결하는 독립된 데이터 모델
+
+3. 관계형 데이터 모델의 용어
+ - 테이블(Table)
+ - 열(Column)
+ - 행(Row)
+ - 관계 데이터베이스에 데이터를 저장할 수 있는 
+ 형식 테이블(Table = Relation)
+ - 행과 열의 교차점은 원자 값 이라는 오직 하나의 
+ 값으로 구성
+ - 테이블의 행은 순서가 정해져 있지 않다.
+ - 테이블의 내용은 실제적인 행의 집합으로 간주된다.
+
+4. SQL
+ - SQL(Structured Query Language)은 관계형 
+ 데이터베이스 언어인다.
+ - 데이터의 삽입, 삭제, 갱신, 질의, 보호(보안) 명령문
+ 으로 구성
+ - SQL은 관계 데이터베이스 언어로써 비절차적
+ 데이터베이스 언어로 분류한다.
+
+5. 데이터베이스 설치
+ - Oracle 11g
+ - https://www.oracle.com/database/technologies/xe-prior-release-downloads.html
+ - alter user hr identified by hr account unlock;
+ - alter user hr identified by 1234;
+ - grant connect, resource to hr;
+
+6. 디비버
+ - 실행 : ctrl + enter
+ - C:\Users\KITCOOP\AppData\Roaming\DBeaverData\workspace6\General\Scripts\dbms
+
+7. SQL
+ - SQL기능에 따른 분류
+ 7-1. 데이터 정의어(DDL)
+  - 테이블이나 관계의 구조를 생성하는데 사용하며
+  create, alter, drop 문 등이 있다.
+ 
+ 7-2. 데이터 조작어(DML)
+  - 테이블에 데이터를 검색, 삽입, 수정, 삭제하는데
+  사용하며 select, insert, delete, update문 등이
+  있다.(Create, Read, Update, Delete)
+
+ 7-3. 데이터 제어어(DCL)
+  - 데이터의 사용 권한을 관리하는데 사용하며
+  grant, revoke 문 등이 있다.
+
+8. SELECT 문의 구성 요소
+
+SELECT 	EMPLOYEE_ID, LAST_NAME
+FROM	EMPLOYEES
+WHERE	LAST_NAME = 'ostin';
+
+SELECT 	*
+FROM	EMPLOYEES
+;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- property -->
+    <p>
+        <label>prevent event on</label>
+        <input id="prevent" type="checkbox"/>
+    </p>
+    <p>
+        <a href="https://www.naver.com">naver</a>
+    </p>
+    <p>
+        <form action="https://www.naver.com">
+            <input type="submit">
+        </form>
+    </p>
+    <script>
+        // 37분까지
+        document.querySelector('a').onclick = function(){
+            if( document.getElementById('prevent').checked ){
+                return false;
+            }
+        }
+        document.querySelector('form').onsubmit = function(){
+            if( document.getElementById('prevent').checked ){
+                return false;
+            }
+        }
+        
+    </script>
+</body>
+</html>

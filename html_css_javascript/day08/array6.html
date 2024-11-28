@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*
+            let s = ['이유덕', '이재영', '권종표', '이재영', 
+            '박민호', '강상희', '이재영', '김지완', '최승혁', 
+            '이성연', '박영서', '박민호', '전경헌', '송정환', 
+            '김재성', '이유덕', '전경헌'];
+
+            함수 생성(11시 50분까지, 쉬는시간 포함)
+            1-1. 김씨와 이씨는 각각 몇명인가?
+            1-2. "이재영"이라는 이름이 몇번 반복되나?
+            1-3. 중복되지 않는 이름을 출력하세요
+            1-4. 중복되지 않는 이름을 오름차순으로 출력
+        */
+        let s = ['이유덕', '이재영', '권종표', '이재영', 
+        '박민호', '강상희', '이재영', '김지완', '최승혁', 
+        '이성연', '박영서', '박민호', '전경헌', '송정환', 
+        '김재성', '이유덕', '전경헌'];
+
+        //  1-1. 김씨와 이씨는 각각 몇명인가?
+        function naming1(){
+            let kim = 0;
+            let lee = 0;
+
+            for( let i = 0; i<s.length; i++ ){
+                if( s[i][0] == '이' ) lee++;                
+                if(s[i][0] == '김') kim++;                               
+            }
+
+            return document.write("kim : " + kim + ", lee : " + lee);
+        }
+
+        naming1();
+
+        // 1-2. "이재영"이라는 이름이 몇번 반복되나?
+        function naming2(param){
+            let name = param;
+            let count = 0;
+
+            for( let i = 0; i<s.length; i++ ){
+                if(s[i] == name){
+                    count++;
+                }
+            }
+            return document.write(name + ":" + count);
+        }
+        document.write("<br>");
+        naming2("이재영");
+
+        // 1-3. 중복되지 않는 이름을 출력하세요
+        function naming3(){
+            let uniq = [];
+
+            for( let i = 0; i<s.length; i++ ){
+                let uni_count = 0;
+
+                for( let j = 0; j<s.length; j++ ){
+                    // i와 j가 같으면 uni_count 1씩 증가
+                    if(s[i] == s[j]) uni_count++;
+                }
+
+                // uni_count가 2보다 작으면
+                // uniq 배열끝에 push
+                if( uni_count < 2 ){
+                    uniq.push(s[i]);
+                }
+            }
+
+            return uniq;
+        }
+
+        document.write("<br>");
+        document.write(naming3());
+
+        // 1-4. 중복되지 않는 이름을 오름차순으로 출력
+        function naming4(){
+            return naming3().sort();
+        }
+
+        document.write("<br>");
+        document.write(naming4());
+    </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+

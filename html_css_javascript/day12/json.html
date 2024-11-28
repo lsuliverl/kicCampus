@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+</head>
+<body>
+    <h1>둘리의 과목점수</h1>
+    <ol id="list"></ol><!--45분까지-->
+
+    <script>
+        let dolly = {
+            r1 : {suject:"HTML5", point:"78"},
+            r2 : {suject:"CSS", point:"82"},
+            r3 : {suject:"Javascript", point:"63"}
+        };
+
+        let tag = "";
+        tag += "<li>" + dolly.r1.suject + ":" 
+                     + dolly.r1.point + "</li>";
+        tag += "<li>" + dolly.r2.suject + ":" 
+                     + dolly.r2.point + "</li>";
+        tag += "<li>" + dolly.r3.suject + ":" 
+                     + dolly.r3.point + "</li>";
+
+        $("#list").html(tag);
+    </script>
+</body>
+</html>

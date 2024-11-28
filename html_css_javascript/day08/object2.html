@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<ul>
+    <script>
+        let grades = {
+            'abc' : 10,
+            'def' : 6,
+            'ghr' : 80
+        };
+
+        // document.write(grades['abc'] + "<br>");
+        // document.write(grades.def + "<br>");
+
+        for( key in grades ){
+            document.write("<li>key : " + key 
+                + " ,value : " + grades[key] + "</li>");
+        }
+        
+    </script>
+</ul>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*
+            익명함수
+             function() {....}
+             () => {....}
+
+            1. 기능 구현
+            2. function() 익명함수
+            3. () => 익명함수
+        */
+        
+        function ask(question, yes, no){
+            if( confirm(question) ){        // 확인
+                yes();
+            } else {                        // 취소
+                no();
+            }
+        }
+
+        ask('동의하십니까?',
+            function(){alert('동의하셨습니다.');},
+            function(){alert('취소 버튼을 누르셨습니다.');});
+        
+
+    </script>
+</body>
+</html>

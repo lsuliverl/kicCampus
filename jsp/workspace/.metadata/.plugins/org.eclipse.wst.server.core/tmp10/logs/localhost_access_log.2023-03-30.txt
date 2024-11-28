@@ -1,0 +1,12 @@
+127.0.0.1 - - [30/Mar/2023:18:42:12 +0900] "GET / HTTP/1.1" 200 272
+0:0:0:0:0:0:0:1 - - [30/Mar/2023:18:42:32 +0900] "GET /protfolio/evaluationRegisterAction.jsp%7D HTTP/1.1" 404 852
+0:0:0:0:0:0:0:1 - - [30/Mar/2023:18:42:33 +0900] "GET /favicon.ico HTTP/1.1" 404 818
+0:0:0:0:0:0:0:1 - - [30/Mar/2023:18:42:36 +0900] "GET / HTTP/1.1" 200 272
+0:0:0:0:0:0:0:1 - - [30/Mar/2023:18:42:38 +0900] "GET /board/BoardWrite.bo HTTP/1.1" 302 -
+0:0:0:0:0:0:0:1 - - [30/Mar/2023:18:42:38 +0900] "GET /board/boardwrite.jsp HTTP/1.1" 200 1498
+0:0:0:0:0:0:0:1 - - [30/Mar/2023:18:42:42 +0900] "POST /board/BoardWriteOK.bo HTTP/1.1" 500 4449
+0:0:0:0:0:0:0:1 - - [30/Mar/2023:18:42:45 +0900] "GET /board/BoardList.bo HTTP/1.1" 500 5202
+0:0:0:0:0:0:0:1 - - [30/Mar/2023:18:42:52 +0900] "GET /board/BoardList.bo HTTP/1.1" 500 5202
+0:0:0:0:0:0:0:1 - - [30/Mar/2023:18:47:17 +0900] "GET /board/BoardList.bo HTTP/1.1" 500 5202
+0:0:0:0:0:0:0:1 - - [30/Mar/2023:18:47:17 +0900] "GET /board/BoardList.bo HTTP/1.1" 500 5202
+0:0:0:0:0:0:0:1 - - [30/Mar/2023:18:47:19 +0900] "GET /board/BoardList.bo HTTP/1.1" 500 5202
